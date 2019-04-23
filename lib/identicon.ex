@@ -12,7 +12,7 @@ defmodule Identicon do
       |> build_pixel_map
       |> draw_image
       |> save_image(arg_input)
-    end
+  end
 
   def save_image(image, filename) do
     File.write("#{filename}.png", image)
